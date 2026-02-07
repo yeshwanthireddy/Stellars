@@ -1,0 +1,98 @@
+# Project: PhishGuard - Real-Time Phishing Detection System
+
+## Goal
+
+To build an intelligent system that detects phishing emails and malicious links in real time and warns users before they open unsafe content.
+
+PhishGuard provides both browser-based automatic protection and a desktop-based manual scanning tool to improve online security.
+
+
+## Problem Statement
+
+Phishing attacks are one of the most common cyber threats, where attackers use fake emails and malicious links to steal sensitive information.
+
+Users often cannot identify such threats, especially when attackers use shortened URLs and fake domains. Existing solutions either detect threats too late or fail to provide clear warnings.
+
+There is a need for a real-time, intelligent, and user-friendly phishing detection system.
+
+## Key Features
+
+- Real-time browser extension for link interception  
+- Instant popup warning system  
+- Multi-agent AI-based analysis  
+- Detection of shortened and fake URLs  
+- Desktop application for manual scanning  
+- Hybrid AI and rule-based detection  
+- Fast response time (< 1 second)
+
+## Technical Stack
+
+### Frontend
+- JavaScript
+- HTML / CSS
+- Chrome & Edge Extension API
+
+### Backend
+- Python 3.10
+- Flask (REST API)
+
+### AI & Analysis
+- Scikit-learn
+- TF-IDF Vectorization
+- Logistic Regression
+- Heuristic Rule Engine
+
+### Desktop Application
+- Tkinter (GUI)
+
+### Development Tools
+- Visual Studio Code
+- Git & GitHub
+- Virtual Environment (venv)
+- Windows OS
+
+## Project Structure
+
+phishguard/
+│
+├── agents/
+│ ├── url_agent.py
+│ ├── text_agent.py
+│ └── sender_agent.py
+| |____ consensus.py
+│
+├── background_server.py
+├── train_text.py
+├── prepare_text_data.py
+│
+├── phishguard_extension/
+│ ├── manifest.json
+│ ├── content.js
+│ └── background.js
+│
+└── desktop_app.py
+
+## How It Works
+
+1. User clicks on a link in email or webpage
+2. Browser extension intercepts the click
+3. Link is sent to Flask backend
+4. Multiple agents analyze the content
+5. Risk score is calculated
+6. Popup warning is displayed
+7. User decides whether to continue
+
+## Future Enhancements
+
+- Mobile application support  
+- Cloud-based threat intelligence  
+- Deep learning-based detection models  
+- Enterprise email security plugins  
+- Centralized phishing database
+
+## Team
+
+- Team Name: Stellars
+- Members: Siddi Sri , Anitha , Yeshwanthi.
+- Institution: Amrita School of Computing
+- Event: EpochOn 2.0 Hackathon
